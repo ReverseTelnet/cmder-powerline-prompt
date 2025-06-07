@@ -97,7 +97,8 @@ local function init()
             -- Has branch => therefore it is a git folder, now figure out status
             local gitStatus = get_git_status()
             local gitConflict = get_git_conflict()
-            segment.text = " "..plc_git_branchSymbol.." "..branch.." "
+            -- segment.text = " "..plc_git_branchSymbol.." "..branch.." "
+            segment.text = " § "..branch.." "
 
 
             if gitConflict then
